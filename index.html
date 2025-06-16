@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChaoticLabs</title>
+    <link rel="icon" type="image/svg+xml" href="ChaoticLabs.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #172129;
+            overflow: hidden;
+            font-family: 'Raleway', sans-serif;
+        }
+
+        .content-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .logo-container {
+            position: relative;
+            width: 300px;
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .logo {
+            width: 100%;
+            height: 100%;
+            filter: brightness(1.2) contrast(1.1);
+            animation: rainbow 8s linear infinite;
+        }
+
+        .text-content {
+            text-align: center;
+            color: #ffffff;
+        }
+
+        .text-content h1 {
+            font-size: 2.5rem;
+            font-weight: 500;
+            margin: 0;
+            letter-spacing: -0.02em;
+        }
+
+        @keyframes rainbow {
+            0% {
+                filter: brightness(1.2) contrast(1.1) hue-rotate(0deg) drop-shadow(0 0 20px rgba(255, 255, 255, 0.3));
+            }
+            16.666% {
+                filter: brightness(1.2) contrast(1.1) hue-rotate(60deg) drop-shadow(0 0 20px rgba(255, 255, 255, 0.3));
+            }
+            33.333% {
+                filter: brightness(1.2) contrast(1.1) hue-rotate(120deg) drop-shadow(0 0 20px rgba(255, 255, 255, 0.3));
+            }
+            50% {
+                filter: brightness(1.2) contrast(1.1) hue-rotate(180deg) drop-shadow(0 0 20px rgba(255, 255, 255, 0.3));
+            }
+            66.666% {
+                filter: brightness(1.2) contrast(1.1) hue-rotate(240deg) drop-shadow(0 0 20px rgba(255, 255, 255, 0.3));
+            }
+            83.333% {
+                filter: brightness(1.2) contrast(1.1) hue-rotate(300deg) drop-shadow(0 0 20px rgba(255, 255, 255, 0.3));
+            }
+            100% {
+                filter: brightness(1.2) contrast(1.1) hue-rotate(360deg) drop-shadow(0 0 20px rgba(255, 255, 255, 0.3));
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="content-container">
+        <div class="logo-container">
+            <img src="ChaoticLabs.svg" alt="ChaoticLabs Logo" class="logo">
+        </div>
+        <div class="text-content">
+            <h1>Chaotic Labs</h1>
+        </div>
+    </div>
+</body>
+</html> 
